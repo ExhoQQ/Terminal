@@ -68,4 +68,4 @@ date
 1) curl 'http://162.55.220.72:5006/terminal-hw-request'
 curl 'http://162.55.220.72:5005/get_method?name=Volodymyr&age=19'
 
-2) 
+2) 1
