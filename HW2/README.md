@@ -135,7 +135,7 @@ tf_5.close()
 
 ### 30. Find only the path and file name with "second" in the lines in the current folder
 `grep -ls second *` 
-> --files-with-match - будут выведены только файлы, в которых есть хотя бы одно вхождение;
+> -l, --files-with-match - будут выведены только файлы, в которых есть хотя бы одно вхождение;
 
 ### 31. Find all lines in all files where there is no "second" combination
 `grep -rv second`
