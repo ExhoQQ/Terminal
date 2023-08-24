@@ -16,13 +16,11 @@
 `cd dir_2`
 
 ### 6. Create 5 files (3.txt, 2.json)
-```
-touch first.txt 
-touch second.txt 
-touch third.txt 
-touch fourth.json
-touch fifth.json
-```
+`touch first.txt `
+`touch second.txt `
+`touch third.txt `
+`touch fourth.json`
+`touch fifth.json`
 
 ### 7. Create 3 folders 
 `mkdir dir_5 dir_6 dir_7`
@@ -54,11 +52,9 @@ test123`
 `find first.txt *`
 
 ### 16. View content in real-time
-```
-grep test *
-grep -i test *
-grep -wi test *
-```
+`grep test *`
+`grep -i test *`
+`grep -wi test *`
 
 ### 17. Display the first few lines from a txt file
 `head -n2 name.txt`
