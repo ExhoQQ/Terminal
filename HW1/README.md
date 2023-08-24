@@ -69,3 +69,51 @@ test123`
 ### 20. Display date and time
 `date`
 
+## Task *
+### 1. Send HTTP request http://162.55.220.72:5006/terminal-hw-request to server
+
+Request:
+
+`curl http://162.55.220.72:5006/terminal-hw-request`
+
+Response:
+```
+  "Intro": "Hello!! This is your first response from the server",
+  "Tasks": {
+    "Task_1": "Send the next URL in terminal: http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)",
+    "result": [
+      "Your_String",
+      "Your_number"
+    ]
+  }
+}
+```
+
+Request:
+
+`curl 'http://162.55.220.72:5005/get_method?name=Volodymyr&age=19'`
+
+Response:
+```
+[
+  "Volodymyr",
+  "19"
+]
+```
+### 2. Write a script that will automatically execute steps 3, 4, 5, 6, 7, 8, 13
+
+- Create a file script.sh and enter in it the items that should be automatically
+```
+#!/bin/bash
+
+mkdir dir_1
+cd dir_1
+mkdir dir_2 dir_3 dir_4
+cd dir_2
+touch first.txt second.txt third.txt fourth.json fifth.json
+mkdir dir_5 dir_6 dir_7
+ls -la
+mv first.txt second.txt dir_5
+```
+- Run a script
+`bash script.sh`
