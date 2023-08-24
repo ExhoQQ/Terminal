@@ -103,8 +103,8 @@ Response:
 ### 2. Write a script that will automatically execute steps 3, 4, 5, 6, 7, 8, 13
 
 - Create a file myscript.sh and enter in it the items that should be automatically
-`cat > myscript.sh`
 ```
+cat > myscript.sh
 #!/bin/bash
 
 mkdir dir_1
