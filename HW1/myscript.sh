@@ -1,18 +1,10 @@
-#1/bin/bash
+#!/bin/bash
 
-echo "Helo World"
-echo "Let's start doing my homework"
-echo "My first task was to change directory, that's what we gonna do rn"
-cd /c/QA_Course/Terminal/script/
-mkdir HW1 HW2 HW3 #Создание 3 папок
-cd HW1
-touch test1.txt
-touch test2.txt
-touch test3.txt
-touch test4.json
-touch test5.json
-mkdir name1 name2 name3
-ls
-mv test1.txt name1
-ls
-echo 'That was the end of my script, goodbye and have a nice day!'
+mkdir dir_1
+cd dir_1
+mkdir dir_2 dir_3 dir_4
+cd dir_2
+touch first.txt second.txt third.txt fourth.json fifth.json
+mkdir dir_5 dir_6 dir_7
+ls -la
+mv first.txt second.txt dir_5
