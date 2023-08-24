@@ -158,13 +158,13 @@ mkdir new/ && cat > new.txt
 ```
 
 ### 36. One line command. Move text files with the word "sec" in their contents to any single folder
-`grep -rlw "sec" | xargs mv -t new/`
+`grep -rlw sec | xargs mv -t new/`
 
 ### 37. One line command. Copy text files with the word "sec" in their contents to any one folder
-`grep -rlw "sec" | xargs cp -t new/`
+`grep -rlw sec | xargs cp -t new/`
 
 ### 38. One line command. Find all lines with "sec" in all text files, copy and paste these lines into one new created text file
-`grep -hr 'sec' | cat > new2.txt` 
+`grep -hr sec | cat > new2.txt` 
 > -h, --no-filename, suppress the file name prefix on output
 
 ### 39. One line command. Delete text files with the word "sec" in their contents
