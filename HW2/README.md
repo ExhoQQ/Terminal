@@ -130,12 +130,11 @@ tf_5.close()
 
 ### 29. Find lines in files with the letter combination "second" in all folders below the folder level
 `grep -rs second`
-> -r,  --recursive, like --directories=recurse
--s,  --no-messages, suppress error messages
+> -r,  --recursive, like --directories=recurse; -s,  --no-messages, suppress error messages
 
 ### 30. Find only the path and file name with "second" in the lines in the current folder
 `grep -ls second *` 
-> -l, --files-with-match - будут выведены только файлы, в которых есть хотя бы одно вхождение;
+> -l, --files-with-matches, print only names of FILEs containing matches
 
 ### 31. Find all lines in all files where there is no "second" combination
 `grep -rv second`
