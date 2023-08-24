@@ -102,7 +102,8 @@ Response:
 ```
 ### 2. Write a script that will automatically execute steps 3, 4, 5, 6, 7, 8, 13
 
-- Create a file script.sh and enter in it the items that should be automatically
+- Create a file myscript.sh and enter in it the items that should be automatically
+`cat > myscript.sh
 ```
 #!/bin/bash
 
@@ -116,4 +117,4 @@ ls -la
 mv first.txt second.txt dir_5
 ```
 - Run a script
-`bash script.sh`
+`bash myscript.sh`
