@@ -113,11 +113,11 @@ tf_5.close()
 
 ### 24. Find lines in files where there is a combination of letters "sec" in any case in the current folder
 `grep -i sec *`
-> # -i, --ignore-case - не учитывать регистр символов;
+> -i, --ignore-case - не учитывать регистр символов;
 
 ### 25. Find lines in files with only the letter combination "sec" in the current folder
 `grep -w sec *`
-> # -w, --word-regexp - искать шаблон как слово, отделенное пробелами или другими знаками препинания;
+> -w, --word-regexp - искать шаблон как слово, отделенное пробелами или другими знаками препинания;
 
 ### 26. Find lines in files with only the combination of letters "sec" in any case in the current folder
 `grep -iw sec *`
@@ -130,16 +130,16 @@ tf_5.close()
 
 ### 29. Find lines in files with the letter combination "second" in all folders below the folder level
 `grep -rs second`
-> # -r - рекурсивный поиск по всем подпапкам;
-> # -s, --no-messages - не выводить ошибки чтения файлов;
+> -r - рекурсивный поиск по всем подпапкам;
+> -s, --no-messages - не выводить ошибки чтения файлов;
 
 ### 30. Find only the path and file name with "second" in the lines in the current folder
 `grep -ls second *` 
-> # -l, --files-with-match - будут выведены только файлы, в которых есть хотя бы одно вхождение;
+> -l, --files-with-match - будут выведены только файлы, в которых есть хотя бы одно вхождение;
 
 ### 31. Find all lines in all files where there is no "second" combination
 `grep -rv second`
-> # -v, --invert-match - вывести только те строки, в которых шаблон поиска не найден;
+> -v, --invert-match - вывести только те строки, в которых шаблон поиска не найден;
 
 ### 32. Find only the name and path to files where there is no "second" combination
 `grep -rvl second`
@@ -166,7 +166,7 @@ mkdir new/ && cat > new.txt
 
 ### 38. One line command. Find all lines with "sec" in all text files, copy and paste these lines into one new created text file
 `grep -hr 'sec' | cat > new2.txt` 
-> # -h, --no-filename - не выводить имя файла;
+> -h, --no-filename - не выводить имя файла;
 
 ### 39. One line command. Delete text files with the word "sec" in their contents
 `grep -wrl sec | xargs rm`
